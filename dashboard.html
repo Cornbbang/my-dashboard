@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
@@ -50,72 +49,72 @@ body {
 .page.active { display: block; }
 
 /* 주간 스케줄 */
-.week-info-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; padding: 10px 14px; background: var(–surface); border: 0.5px solid var(–border); border-radius: 12px; }
+.week-info-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; padding: 10px 14px; background: var(--surface); border: 0.5px solid var(--border); border-radius: 12px; }
 .week-info-bar .week-name { font-size: 13px; font-weight: 600; }
-.week-info-bar .week-dates { font-size: 11px; color: var(–text3); }
-.reset-btn, .hsk-reset-btn { padding: 5px 12px; border-radius: 6px; border: 0.5px solid var(–border2); background: var(–surface); color: var(–text2); font-size: 11px; font-family: inherit; cursor: pointer; transition: all 0.15s; }
-.reset-btn:hover { background: var(–surface2); }
+.week-info-bar .week-dates { font-size: 11px; color: var(--text3); }
+.reset-btn, .hsk-reset-btn { padding: 5px 12px; border-radius: 6px; border: 0.5px solid var(--border2); background: var(--surface); color: var(--text2); font-size: 11px; font-family: inherit; cursor: pointer; transition: all 0.15s; }
+.reset-btn:hover { background: var(--surface2); }
 .hsk-reset-btn:hover { background: #fff0f0; color: #a32d2d; border-color: #f09595; }
-.auto-notice { font-size: 10px; color: var(–text3); margin-bottom: 14px; text-align: right; }
+.auto-notice { font-size: 10px; color: var(--text3); margin-bottom: 14px; text-align: right; }
 .legend { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
-.leg { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(–text2); }
+.leg { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--text2); }
 .leg-dot { width: 9px; height: 9px; border-radius: 2px; flex-shrink: 0; }
 .sched-progress { margin: 0 0 14px; }
-.sp-label { display: flex; justify-content: space-between; font-size: 11px; color: var(–text2); margin-bottom: 5px; }
-.prog-wrap { background: var(–surface2); border-radius: 6px; height: 6px; overflow: hidden; }
-.prog-fill { height: 6px; border-radius: 6px; background: var(–amber-dark); transition: width 0.3s; }
+.sp-label { display: flex; justify-content: space-between; font-size: 11px; color: var(--text2); margin-bottom: 5px; }
+.prog-wrap { background: var(--surface2); border-radius: 6px; height: 6px; overflow: hidden; }
+.prog-fill { height: 6px; border-radius: 6px; background: var(--amber-dark); transition: width 0.3s; }
 
 .sched-grid { display: grid; grid-template-columns: 44px repeat(5, 1fr); gap: 3px; }
-.day-header { text-align: center; font-size: 11px; font-weight: 600; color: var(–text2); padding: 4px 0 8px; }
-.day-header.today-col { color: var(–amber-dark); }
-.time-label { font-size: 10px; color: var(–text3); text-align: right; padding-right: 5px; display: flex; align-items: center; justify-content: flex-end; height: 52px; }
+.day-header { text-align: center; font-size: 11px; font-weight: 600; color: var(--text2); padding: 4px 0 8px; }
+.day-header.today-col { color: var(--amber-dark); }
+.time-label { font-size: 10px; color: var(--text3); text-align: right; padding-right: 5px; display: flex; align-items: center; justify-content: flex-end; height: 52px; }
 .block { border-radius: 7px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 4px 3px; text-align: center; cursor: pointer; transition: all 0.18s; position: relative; user-select: none; }
 .block:hover { filter: brightness(0.93); transform: scale(0.97); }
-.block.checked::after { content: ‘✓’; position: absolute; top: 3px; right: 5px; font-size: 10px; font-weight: 700; opacity: 0.7; }
+.block.checked::after { content: '✓'; position: absolute; top: 3px; right: 5px; font-size: 10px; font-weight: 700; opacity: 0.7; }
 .block.checked { opacity: 0.45; }
 .block.no-check { cursor: default; }
 .block.no-check:hover { filter: none; transform: none; }
 .block-label { font-size: 10px; font-weight: 600; line-height: 1.3; }
 .block-sub { font-size: 9px; line-height: 1.3; opacity: 0.8; margin-top: 1px; }
-.b-job   { background: var(–blue); color: var(–blue-dark); }
-.b-pbi   { background: var(–green); color: var(–green-dark); }
-.b-yoga  { background: var(–pink); color: var(–pink-dark); }
-.b-hsk   { background: var(–amber); color: var(–amber-dark); }
-.b-out   { background: var(–teal); color: var(–teal-dark); }
-.b-free  { background: var(–surface2); color: var(–text2); }
-.b-break { background: var(–surface2); color: var(–text3); border: 0.5px solid var(–border); cursor: default; }
+.b-job   { background: var(--blue); color: var(--blue-dark); }
+.b-pbi   { background: var(--green); color: var(--green-dark); }
+.b-yoga  { background: var(--pink); color: var(--pink-dark); }
+.b-hsk   { background: var(--amber); color: var(--amber-dark); }
+.b-out   { background: var(--teal); color: var(--teal-dark); }
+.b-free  { background: var(--surface2); color: var(--text2); }
+.b-break { background: var(--surface2); color: var(--text3); border: 0.5px solid var(--border); cursor: default; }
 .b-break:hover { filter: none; transform: none; }
-.section-row { grid-column: 1 / -1; background: var(–surface2); border-radius: 4px; font-size: 10px; font-weight: 600; color: var(–text2); padding: 4px 8px; margin-top: 4px; }
+.section-row { grid-column: 1 / -1; background: var(--surface2); border-radius: 4px; font-size: 10px; font-weight: 600; color: var(--text2); padding: 4px 8px; margin-top: 4px; }
 
-.info-box { margin-top: 14px; border-radius: 12px; padding: 14px 16px; background: var(–surface); border: 0.5px solid var(–border); }
+.info-box { margin-top: 14px; border-radius: 12px; padding: 14px 16px; background: var(--surface); border: 0.5px solid var(--border); }
 .info-box h2 { font-size: 13px; font-weight: 600; margin-bottom: 10px; }
-.info-row { display: flex; justify-content: space-between; font-size: 11px; padding: 4px 0; border-bottom: 0.5px solid var(–border); color: var(–text2); }
+.info-row { display: flex; justify-content: space-between; font-size: 11px; padding: 4px 0; border-bottom: 0.5px solid var(--border); color: var(--text2); }
 .info-row:last-child { border-bottom: none; }
 .info-row span:last-child { font-weight: 600; }
-.pbi-row { font-size: 11px; padding: 4px 0; border-bottom: 0.5px solid var(–border); color: var(–text2); display: flex; gap: 8px; align-items: flex-start; }
+.pbi-row { font-size: 11px; padding: 4px 0; border-bottom: 0.5px solid var(--border); color: var(--text2); display: flex; gap: 8px; align-items: flex-start; }
 .pbi-row:last-child { border-bottom: none; }
-.pbi-dot { width: 5px; height: 5px; border-radius: 50%; background: var(–green-dark); flex-shrink: 0; margin-top: 5px; }
+.pbi-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--green-dark); flex-shrink: 0; margin-top: 5px; }
 .principle { margin-bottom: 10px; }
 .principle:last-child { margin-bottom: 0; }
-.principle-title { font-size: 12px; font-weight: 600; color: var(–blue-dark); margin-bottom: 2px; }
-.principle-desc { font-size: 11px; color: var(–text2); line-height: 1.6; }
+.principle-title { font-size: 12px; font-weight: 600; color: var(--blue-dark); margin-bottom: 2px; }
+.principle-desc { font-size: 11px; color: var(--text2); line-height: 1.6; }
 
 /* HSK */
 .hsk-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 10px; }
-.hsk-progress-label { display: flex; justify-content: space-between; font-size: 11px; color: var(–text2); margin-bottom: 5px; }
-.hsk-prog-wrap { background: var(–surface2); border-radius: 6px; height: 8px; margin-bottom: 4px; overflow: hidden; }
-.hsk-prog-fill { height: 8px; border-radius: 6px; background: var(–amber); transition: width 0.3s; }
-.hsk-prog-sub { font-size: 10px; color: var(–text3); margin-bottom: 18px; }
-.week-label { font-size: 11px; font-weight: 600; color: var(–text2); background: var(–surface2); border-radius: 5px; padding: 4px 10px; margin: 16px 0 6px; }
+.hsk-progress-label { display: flex; justify-content: space-between; font-size: 11px; color: var(--text2); margin-bottom: 5px; }
+.hsk-prog-wrap { background: var(--surface2); border-radius: 6px; height: 8px; margin-bottom: 4px; overflow: hidden; }
+.hsk-prog-fill { height: 8px; border-radius: 6px; background: var(--amber); transition: width 0.3s; }
+.hsk-prog-sub { font-size: 10px; color: var(--text3); margin-bottom: 18px; }
+.week-label { font-size: 11px; font-weight: 600; color: var(--text2); background: var(--surface2); border-radius: 5px; padding: 4px 10px; margin: 16px 0 6px; }
 .day-row { display: grid; grid-template-columns: 70px 28px 86px 1fr 24px; gap: 6px; align-items: center; padding: 7px 8px; border-radius: 8px; margin-bottom: 3px; font-size: 11px; transition: opacity 0.2s; }
-.day-row.study { background: var(–amber-bg); border: 0.5px solid var(–amber-border); }
-.day-row.rest  { background: var(–surface2); border: 0.5px solid var(–border); }
+.day-row.study { background: var(--amber-bg); border: 0.5px solid var(--amber-border); }
+.day-row.rest  { background: var(--surface2); border: 0.5px solid var(--border); }
 .day-row.exam  { background: #fff0f0; border: 1.5px solid #f09595; }
 .day-row.done  { opacity: 0.42; }
-.day-row.done .col-content { text-decoration: line-through; color: var(–text3); }
-.col-date { color: var(–text3); font-size: 10px; display: flex; flex-direction: column; gap: 2px; }
-.today-badge { background: var(–amber); color: var(–amber-dark); border-radius: 3px; font-size: 9px; font-weight: 600; padding: 1px 4px; width: fit-content; }
-.col-day { font-weight: 600; font-size: 11px; color: var(–text1); }
+.day-row.done .col-content { text-decoration: line-through; color: var(--text3); }
+.col-date { color: var(--text3); font-size: 10px; display: flex; flex-direction: column; gap: 2px; }
+.today-badge { background: var(--amber); color: var(--amber-dark); border-radius: 3px; font-size: 9px; font-weight: 600; padding: 1px 4px; width: fit-content; }
+.col-day { font-weight: 600; font-size: 11px; color: var(--text1); }
 .col-day.sat { color: #185FA5; }
 .col-day.sun { color: #A32D2D; }
 .col-day.wed, .col-day.fri { color: #72243E; }
@@ -127,17 +126,16 @@ body {
 .tag-writ { background: #EEEDFE; color: #3C3489; }
 .tag-mock { background: #FCEBEB; color: #A32D2D; }
 .tag-fin  { background: #E1F5EE; color: #0F6E56; }
-.tag-rest { background: var(–surface2); color: var(–text2); }
+.tag-rest { background: var(--surface2); color: var(--text2); }
 .tag-exam { background: #FCEBEB; color: #A32D2D; }
-.col-content { color: var(–text2); line-height: 1.5; font-size: 11px; }
-.col-content .daynum { font-weight: 600; color: var(–amber-dark); margin-right: 4px; }
-.col-content .note { font-size: 10px; color: var(–text3); margin-top: 2px; }
-.hsk-chk { width: 16px; height: 16px; cursor: pointer; accent-color: var(–amber-dark); }
+.col-content { color: var(--text2); line-height: 1.5; font-size: 11px; }
+.col-content .daynum { font-weight: 600; color: var(--amber-dark); margin-right: 4px; }
+.col-content .note { font-size: 10px; color: var(--text3); margin-top: 2px; }
+.hsk-chk { width: 16px; height: 16px; cursor: pointer; accent-color: var(--amber-dark); }
 
-.toast { position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%) translateY(20px); background: var(–text1); color: #fff; padding: 9px 18px; border-radius: 20px; font-size: 12px; opacity: 0; transition: all 0.25s; pointer-events: none; z-index: 999; white-space: nowrap; }
+.toast { position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%) translateY(20px); background: var(--text1); color: #fff; padding: 9px 18px; border-radius: 20px; font-size: 12px; opacity: 0; transition: all 0.25s; pointer-events: none; z-index: 999; white-space: nowrap; }
 .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 </style>
-
 </head>
 <body>
 <div class="container">
@@ -151,7 +149,6 @@ body {
   </div>
 
   <!-- 주간 스케줄 -->
-
   <div id="tab-schedule" class="page active">
     <div class="week-info-bar">
       <div>
@@ -173,96 +170,92 @@ body {
       <div class="leg"><div class="leg-dot" style="background:var(--teal)"></div>외출/미술관</div>
     </div>
 
-```
-<div class="sched-grid">
-  <div></div>
-  <div class="day-header" id="dh-1">월</div>
-  <div class="day-header" id="dh-2">화</div>
-  <div class="day-header" id="dh-3">수</div>
-  <div class="day-header" id="dh-4">목</div>
-  <div class="day-header" id="dh-5">금</div>
-  <div class="section-row">오전</div>
-  <div class="time-label">08:30</div>
-  <div class="block b-job" data-id="s-mon-0830" onclick="toggleBlock(this)"><span class="block-label">잡서칭 A</span><span class="block-sub">한국어+회계</span></div>
-  <div class="block b-job" data-id="s-tue-0830" onclick="toggleBlock(this)"><span class="block-label">잡서칭 B</span><span class="block-sub">일반 공고</span></div>
-  <div class="block b-job" data-id="s-wed-0830" onclick="toggleBlock(this)"><span class="block-label">잡서칭 A</span><span class="block-sub">한국어+회계</span></div>
-  <div class="block b-pbi" data-id="s-thu-0830" onclick="toggleBlock(this)"><span class="block-label">Power BI</span><span class="block-sub">강의</span></div>
-  <div class="block b-job" data-id="s-fri-0830" onclick="toggleBlock(this)"><span class="block-label">잡서칭 B</span><span class="block-sub">일반 공고</span></div>
-  <div class="time-label">09:30</div>
-  <div class="block b-job" data-id="s-mon-0930" onclick="toggleBlock(this)"><span class="block-label">커버레터</span><span class="block-sub">작성·지원</span></div>
-  <div class="block b-job" data-id="s-tue-0930" onclick="toggleBlock(this)"><span class="block-label">커버레터</span><span class="block-sub">작성·지원</span></div>
-  <div class="block b-job" data-id="s-wed-0930" onclick="toggleBlock(this)"><span class="block-label">커버레터</span><span class="block-sub">작성·지원</span></div>
-  <div class="block b-pbi" data-id="s-thu-0930" onclick="toggleBlock(this)"><span class="block-label">Power BI</span><span class="block-sub">실습</span></div>
-  <div class="block b-job" data-id="s-fri-0930" onclick="toggleBlock(this)"><span class="block-label">커버레터</span><span class="block-sub">작성·지원</span></div>
-  <div class="time-label">10:30</div>
-  <div class="block b-free no-check"><span class="block-label">자유</span></div>
-  <div class="block b-free no-check"><span class="block-label">자유</span></div>
-  <div class="block b-yoga no-check"><span class="block-label">이동 준비</span><span class="block-sub">요가 10:45</span></div>
-  <div class="block b-free no-check"><span class="block-label">자유</span></div>
-  <div class="block b-yoga no-check"><span class="block-label">이동 준비</span><span class="block-sub">요가 10:45</span></div>
-  <div class="section-row">오후</div>
-  <div class="time-label">12:00</div>
-  <div class="block b-break no-check"><span class="block-label">점심</span></div>
-  <div class="block b-break no-check"><span class="block-label">점심</span></div>
-  <div class="block b-yoga no-check"><span class="block-label">요가 이동</span><span class="block-sub">12:30 클래스</span></div>
-  <div class="block b-break no-check"><span class="block-label">점심</span></div>
-  <div class="block b-break no-check"><span class="block-label">점심</span></div>
-  <div class="time-label">13:30</div>
-  <div class="block b-pbi" data-id="s-mon-1330" onclick="toggleBlock(this)"><span class="block-label">Power BI</span><span class="block-sub">강의</span></div>
-  <div class="block b-pbi" data-id="s-tue-1330" onclick="toggleBlock(this)"><span class="block-label">Power BI</span><span class="block-sub">강의</span></div>
-  <div class="block b-yoga no-check"><span class="block-label">요가·복귀</span></div>
-  <div class="block b-pbi" data-id="s-thu-1330" onclick="toggleBlock(this)"><span class="block-label">Power BI</span><span class="block-sub">강의</span></div>
-  <div class="block b-out" data-id="s-fri-1330" onclick="toggleBlock(this)"><span class="block-label">외출 자유</span><span class="block-sub">미술관 등</span></div>
-  <div class="time-label">15:00</div>
-  <div class="block b-pbi" data-id="s-mon-1500" onclick="toggleBlock(this)"><span class="block-label">Power BI</span><span class="block-sub">실습</span></div>
-  <div class="block b-pbi" data-id="s-tue-1500" onclick="toggleBlock(this)"><span class="block-label">Power BI</span><span class="block-sub">실습</span></div>
-  <div class="block b-pbi" data-id="s-wed-1500" onclick="toggleBlock(this)"><span class="block-label">Power BI</span><span class="block-sub">복귀 후</span></div>
-  <div class="block b-pbi" data-id="s-thu-1500" onclick="toggleBlock(this)"><span class="block-label">Power BI</span><span class="block-sub">실습</span></div>
-  <div class="block b-out" data-id="s-fri-1500" onclick="toggleBlock(this)"><span class="block-label">외출 자유</span></div>
-  <div class="section-row">저녁</div>
-  <div class="time-label">17:00</div>
-  <div class="block b-hsk" data-id="s-mon-1700" onclick="toggleBlock(this)"><span class="block-label">HSK 3급</span><span class="block-sub">1시간</span></div>
-  <div class="block b-hsk" data-id="s-tue-1700" onclick="toggleBlock(this)"><span class="block-label">HSK 3급</span><span class="block-sub">1시간</span></div>
-  <div class="block b-hsk" data-id="s-wed-1700" onclick="toggleBlock(this)"><span class="block-label">HSK 3급</span><span class="block-sub">1시간</span></div>
-  <div class="block b-hsk" data-id="s-thu-1700" onclick="toggleBlock(this)"><span class="block-label">HSK 3급</span><span class="block-sub">1시간</span></div>
-  <div class="block b-free no-check"><span class="block-label">자유</span></div>
-  <div class="time-label">18:00</div>
-  <div class="block b-hsk" data-id="s-mon-1800" onclick="toggleBlock(this)"><span class="block-label">HSK 3급</span><span class="block-sub">복습</span></div>
-  <div class="block b-hsk" data-id="s-tue-1800" onclick="toggleBlock(this)"><span class="block-label">HSK 3급</span><span class="block-sub">복습</span></div>
-  <div class="block b-hsk" data-id="s-wed-1800" onclick="toggleBlock(this)"><span class="block-label">HSK 3급</span><span class="block-sub">복습</span></div>
-  <div class="block b-hsk" data-id="s-thu-1800" onclick="toggleBlock(this)"><span class="block-label">HSK 3급</span><span class="block-sub">복습</span></div>
-  <div class="block b-free no-check"><span class="block-label">자유</span></div>
-</div>
+    <div class="sched-grid">
+      <div></div>
+      <div class="day-header" id="dh-1">월</div>
+      <div class="day-header" id="dh-2">화</div>
+      <div class="day-header" id="dh-3">수</div>
+      <div class="day-header" id="dh-4">목</div>
+      <div class="day-header" id="dh-5">금</div>
+      <div class="section-row">오전</div>
+      <div class="time-label">08:30</div>
+      <div class="block b-job" data-id="s-mon-0830" onclick="toggleBlock(this)"><span class="block-label">잡서칭 A</span><span class="block-sub">한국어+회계</span></div>
+      <div class="block b-job" data-id="s-tue-0830" onclick="toggleBlock(this)"><span class="block-label">잡서칭 B</span><span class="block-sub">일반 공고</span></div>
+      <div class="block b-job" data-id="s-wed-0830" onclick="toggleBlock(this)"><span class="block-label">잡서칭 A</span><span class="block-sub">한국어+회계</span></div>
+      <div class="block b-pbi" data-id="s-thu-0830" onclick="toggleBlock(this)"><span class="block-label">Power BI</span><span class="block-sub">강의</span></div>
+      <div class="block b-job" data-id="s-fri-0830" onclick="toggleBlock(this)"><span class="block-label">잡서칭 B</span><span class="block-sub">일반 공고</span></div>
+      <div class="time-label">09:30</div>
+      <div class="block b-job" data-id="s-mon-0930" onclick="toggleBlock(this)"><span class="block-label">커버레터</span><span class="block-sub">작성·지원</span></div>
+      <div class="block b-job" data-id="s-tue-0930" onclick="toggleBlock(this)"><span class="block-label">커버레터</span><span class="block-sub">작성·지원</span></div>
+      <div class="block b-job" data-id="s-wed-0930" onclick="toggleBlock(this)"><span class="block-label">커버레터</span><span class="block-sub">작성·지원</span></div>
+      <div class="block b-pbi" data-id="s-thu-0930" onclick="toggleBlock(this)"><span class="block-label">Power BI</span><span class="block-sub">실습</span></div>
+      <div class="block b-job" data-id="s-fri-0930" onclick="toggleBlock(this)"><span class="block-label">커버레터</span><span class="block-sub">작성·지원</span></div>
+      <div class="time-label">10:30</div>
+      <div class="block b-free no-check"><span class="block-label">자유</span></div>
+      <div class="block b-free no-check"><span class="block-label">자유</span></div>
+      <div class="block b-yoga no-check"><span class="block-label">이동 준비</span><span class="block-sub">요가 10:45</span></div>
+      <div class="block b-free no-check"><span class="block-label">자유</span></div>
+      <div class="block b-yoga no-check"><span class="block-label">이동 준비</span><span class="block-sub">요가 10:45</span></div>
+      <div class="section-row">오후</div>
+      <div class="time-label">12:00</div>
+      <div class="block b-break no-check"><span class="block-label">점심</span></div>
+      <div class="block b-break no-check"><span class="block-label">점심</span></div>
+      <div class="block b-yoga no-check"><span class="block-label">요가 이동</span><span class="block-sub">12:30 클래스</span></div>
+      <div class="block b-break no-check"><span class="block-label">점심</span></div>
+      <div class="block b-break no-check"><span class="block-label">점심</span></div>
+      <div class="time-label">13:30</div>
+      <div class="block b-pbi" data-id="s-mon-1330" onclick="toggleBlock(this)"><span class="block-label">Power BI</span><span class="block-sub">강의</span></div>
+      <div class="block b-pbi" data-id="s-tue-1330" onclick="toggleBlock(this)"><span class="block-label">Power BI</span><span class="block-sub">강의</span></div>
+      <div class="block b-yoga no-check"><span class="block-label">요가·복귀</span></div>
+      <div class="block b-pbi" data-id="s-thu-1330" onclick="toggleBlock(this)"><span class="block-label">Power BI</span><span class="block-sub">강의</span></div>
+      <div class="block b-out" data-id="s-fri-1330" onclick="toggleBlock(this)"><span class="block-label">외출 자유</span><span class="block-sub">미술관 등</span></div>
+      <div class="time-label">15:00</div>
+      <div class="block b-pbi" data-id="s-mon-1500" onclick="toggleBlock(this)"><span class="block-label">Power BI</span><span class="block-sub">실습</span></div>
+      <div class="block b-pbi" data-id="s-tue-1500" onclick="toggleBlock(this)"><span class="block-label">Power BI</span><span class="block-sub">실습</span></div>
+      <div class="block b-pbi" data-id="s-wed-1500" onclick="toggleBlock(this)"><span class="block-label">Power BI</span><span class="block-sub">복귀 후</span></div>
+      <div class="block b-pbi" data-id="s-thu-1500" onclick="toggleBlock(this)"><span class="block-label">Power BI</span><span class="block-sub">실습</span></div>
+      <div class="block b-out" data-id="s-fri-1500" onclick="toggleBlock(this)"><span class="block-label">외출 자유</span></div>
+      <div class="section-row">저녁</div>
+      <div class="time-label">17:00</div>
+      <div class="block b-hsk" data-id="s-mon-1700" onclick="toggleBlock(this)"><span class="block-label">HSK 3급</span><span class="block-sub">1시간</span></div>
+      <div class="block b-hsk" data-id="s-tue-1700" onclick="toggleBlock(this)"><span class="block-label">HSK 3급</span><span class="block-sub">1시간</span></div>
+      <div class="block b-hsk" data-id="s-wed-1700" onclick="toggleBlock(this)"><span class="block-label">HSK 3급</span><span class="block-sub">1시간</span></div>
+      <div class="block b-hsk" data-id="s-thu-1700" onclick="toggleBlock(this)"><span class="block-label">HSK 3급</span><span class="block-sub">1시간</span></div>
+      <div class="block b-free no-check"><span class="block-label">자유</span></div>
+      <div class="time-label">18:00</div>
+      <div class="block b-hsk" data-id="s-mon-1800" onclick="toggleBlock(this)"><span class="block-label">HSK 3급</span><span class="block-sub">복습</span></div>
+      <div class="block b-hsk" data-id="s-tue-1800" onclick="toggleBlock(this)"><span class="block-label">HSK 3급</span><span class="block-sub">복습</span></div>
+      <div class="block b-hsk" data-id="s-wed-1800" onclick="toggleBlock(this)"><span class="block-label">HSK 3급</span><span class="block-sub">복습</span></div>
+      <div class="block b-hsk" data-id="s-thu-1800" onclick="toggleBlock(this)"><span class="block-label">HSK 3급</span><span class="block-sub">복습</span></div>
+      <div class="block b-free no-check"><span class="block-label">자유</span></div>
+    </div>
 
-<div class="info-box" style="border-color:var(--blue);margin-top:20px;">
-  <h2 style="color:var(--blue-dark)">주간 지원 목표</h2>
-  <div class="info-row"><span>월·수 (A트랙 우선)</span><span style="color:var(--blue-dark)">각 1~2개</span></div>
-  <div class="info-row"><span>화·금 (B트랙 위주)</span><span style="color:var(--blue-dark)">각 1~2개</span></div>
-  <div class="info-row"><span>목 (Power BI 집중일)</span><span style="color:var(--blue-dark)">LinkedIn 관리만</span></div>
-  <div class="info-row"><span>주 총합 목표</span><span style="color:var(--blue-dark)">4~6개</span></div>
-</div>
-<div class="info-box" style="border-color:var(--green);">
-  <h2 style="color:var(--green-dark)">Power BI 운영 규칙</h2>
-  <div class="pbi-row"><div class="pbi-dot"></div><span>읽기 자료 스킵 — 강의 + 실습 + 문제풀이만</span></div>
-  <div class="pbi-row"><div class="pbi-dot"></div><span>막히면 10분 룰 — 10분 안에 안 풀리면 답 보고 넘어가기</span></div>
-  <div class="pbi-row"><div class="pbi-dot"></div><span>하루 목표: 세트 1개 완주 = 성공</span></div>
-  <div class="pbi-row"><div class="pbi-dot"></div><span>오후 블록 2시간 고정 (13:30~15:30)</span></div>
-  <div class="pbi-row"><div class="pbi-dot"></div><span>5월 16일 HSK 시험 후 풀가동 재개</span></div>
-</div>
-<div class="info-box">
-  <h2>운영 원칙</h2>
-  <div class="principle"><div class="principle-title">잡서칭은 오전에 마감</div><div class="principle-desc">10:30 이후 절대 넘기지 않기. 공고 없는 날은 LinkedIn 관리나 헤드헌터 팔로업으로 대체.</div></div>
-  <div class="principle"><div class="principle-title">Power BI는 협상 불가</div><div class="principle-desc">잡서칭 결과와 무관하게 오후 2시간 고정. 읽기 자료 스킵, 막히면 10분 룰 적용.</div></div>
-  <div class="principle"><div class="principle-title">주 단위로 목표 설정</div><div class="principle-desc">월요일에 3개 썼으면 화요일은 1개도 OK. 하루가 아닌 주 단위로 균형.</div></div>
-  <div class="principle"><div class="principle-title">금요일 오후는 외출 고정</div><div class="principle-desc">미술관, 산책 등 — 이게 있어야 주중 루틴이 지속 가능.</div></div>
-  <div class="principle"><div class="principle-title">못 한 날은 그냥 다음날부터</div><div class="principle-desc">원래 계획으로 '복귀'할 필요 없음. 오늘부터 다시 시작하면 돼.</div></div>
-</div>
-```
-
+    <div class="info-box" style="border-color:var(--blue);margin-top:20px;">
+      <h2 style="color:var(--blue-dark)">주간 지원 목표</h2>
+      <div class="info-row"><span>월·수 (A트랙 우선)</span><span style="color:var(--blue-dark)">각 1~2개</span></div>
+      <div class="info-row"><span>화·금 (B트랙 위주)</span><span style="color:var(--blue-dark)">각 1~2개</span></div>
+      <div class="info-row"><span>목 (Power BI 집중일)</span><span style="color:var(--blue-dark)">LinkedIn 관리만</span></div>
+      <div class="info-row"><span>주 총합 목표</span><span style="color:var(--blue-dark)">4~6개</span></div>
+    </div>
+    <div class="info-box" style="border-color:var(--green);">
+      <h2 style="color:var(--green-dark)">Power BI 운영 규칙</h2>
+      <div class="pbi-row"><div class="pbi-dot"></div><span>읽기 자료 스킵 — 강의 + 실습 + 문제풀이만</span></div>
+      <div class="pbi-row"><div class="pbi-dot"></div><span>막히면 10분 룰 — 10분 안에 안 풀리면 답 보고 넘어가기</span></div>
+      <div class="pbi-row"><div class="pbi-dot"></div><span>하루 목표: 세트 1개 완주 = 성공</span></div>
+      <div class="pbi-row"><div class="pbi-dot"></div><span>오후 블록 2시간 고정 (13:30~15:30)</span></div>
+      <div class="pbi-row"><div class="pbi-dot"></div><span>5월 16일 HSK 시험 후 풀가동 재개</span></div>
+    </div>
+    <div class="info-box">
+      <h2>운영 원칙</h2>
+      <div class="principle"><div class="principle-title">잡서칭은 오전에 마감</div><div class="principle-desc">10:30 이후 절대 넘기지 않기. 공고 없는 날은 LinkedIn 관리나 헤드헌터 팔로업으로 대체.</div></div>
+      <div class="principle"><div class="principle-title">Power BI는 협상 불가</div><div class="principle-desc">잡서칭 결과와 무관하게 오후 2시간 고정. 읽기 자료 스킵, 막히면 10분 룰 적용.</div></div>
+      <div class="principle"><div class="principle-title">주 단위로 목표 설정</div><div class="principle-desc">월요일에 3개 썼으면 화요일은 1개도 OK. 하루가 아닌 주 단위로 균형.</div></div>
+      <div class="principle"><div class="principle-title">금요일 오후는 외출 고정</div><div class="principle-desc">미술관, 산책 등 — 이게 있어야 주중 루틴이 지속 가능.</div></div>
+      <div class="principle"><div class="principle-title">못 한 날은 그냥 다음날부터</div><div class="principle-desc">원래 계획으로 '복귀'할 필요 없음. 오늘부터 다시 시작하면 돼.</div></div>
+    </div>
   </div>
 
   <!-- HSK 플랜 -->
-
   <div id="tab-hsk" class="page">
     <div class="hsk-top">
       <div style="font-size:11px;color:var(--text3);">Day 1: 4월 8일(수) → 시험: 5월 16일(토) · 일요일 휴식</div>
@@ -419,6 +412,5 @@ function showTab(name,btn){
 
 loadSched();loadHSK();initWeekInfo();applySchedState();renderHSK();
 </script>
-
 </body>
 </html>
