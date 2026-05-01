@@ -345,7 +345,7 @@ function renderHSK(){
   let html='';
   HSK_DAYS.forEach(d=>{
     if(d.week)html+=`<div class="week-label">${d.week}</div>`;
-    const isToday=d.date.startsWith(ts),isDone=hskChecked[d.id];
+    const isToday=d.date.startsWith(ts+" "),isDone=hskChecked[d.id];
     const badge=isToday?`<div class="today-badge">오늘</div>`:'';
     const voc=d.voc?`<span class="voc">📖 ${d.voc}</span>`:'';
     const note=d.note?`<span class="note">⚠️ ${d.note}</span>`:'';
